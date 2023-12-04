@@ -45,4 +45,11 @@ if the terminal has errors:
 
     Timed out waiting for connection while in state: CONNECTING: edit `#listeners=PLAINTEXT://:9092` to `listeners=PLAINTEXT://:9092` in \config\server file
 
-   
+## Consume from the Kafka Topic via Console
+
+    window: .\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic kafka-topic --from-beginning
+    
+    linux: bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic kafka-topic --from-beginning
+
+## Publish message via WebService
+http://localhost:8080/api/v1/kafka/publish
