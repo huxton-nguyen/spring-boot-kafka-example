@@ -53,3 +53,5 @@ if the terminal has errors:
 
 ## Publish message via WebService
 http://localhost:8080/api/v1/kafka/publish
+
+    curl -X POST http://localhost:8080/api/v1/kafka/publish -H "Content-Type: application/json" -d "{\"id\": 2, \"name\": \"Huxton\"}"
